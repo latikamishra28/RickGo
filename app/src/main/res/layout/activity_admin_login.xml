@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLoginActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="15dp"
+    android:background="@drawable/bg">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:background="@drawable/images"
+            >
+            <!-- Welcome Layout -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Welcome"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <!-- Demo Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Name : Demo Name"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/aname"
+                />
+
+            <!-- Demo Phone -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Phone : Demo Phone"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/aphone"
+                />
+
+            <!-- Demo Uid -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="UID : Demo UID"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/auid"
+                />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/adddriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FF2222"
+        android:text="Add Driver"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/abookbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#22FF26"
+        android:text="Book E-Rikshaw"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/aviewbookingbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#227AFF"
+        android:text="View Bookings"
+
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:backgroundTint="#FF5722"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:id="@+id/alogoutbtn"
+        />
+
+</LinearLayout>
